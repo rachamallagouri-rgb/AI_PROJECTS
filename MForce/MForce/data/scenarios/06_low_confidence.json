@@ -1,0 +1,67 @@
+{
+  "id": "06_low_confidence",
+  "title": "Uncertain obstacle detection",
+  "description": "Low-confidence hazard stops vehicle rather than declaring free space.",
+  "frames": [
+    {
+      "event_time_s": 1,
+      "sensor_time_s": 1.0,
+      "ego_speed_mps": 0.0,
+      "sensor_ok": true,
+      "emergency_stop": false,
+      "obstacle": {
+        "category": "six_wheeler",
+        "distance_m": 12,
+        "confidence": 0.5
+      },
+      "lanes": {
+        "left": {
+          "clear": true,
+          "approved": true,
+          "clearance_m": 34,
+          "oncoming": false,
+          "confidence": 0.98
+        },
+        "right": {
+          "clear": true,
+          "approved": true,
+          "clearance_m": 34,
+          "oncoming": false,
+          "confidence": 0.98
+        }
+      }
+    },
+    {
+      "event_time_s": 2,
+      "sensor_time_s": 2.0,
+      "ego_speed_mps": 0.0,
+      "sensor_ok": true,
+      "emergency_stop": false,
+      "obstacle": {
+        "category": "six_wheeler",
+        "distance_m": 12,
+        "confidence": 0.5
+      },
+      "lanes": {
+        "left": {
+          "clear": true,
+          "approved": true,
+          "clearance_m": 34,
+          "oncoming": false,
+          "confidence": 0.98
+        },
+        "right": {
+          "clear": true,
+          "approved": true,
+          "clearance_m": 34,
+          "oncoming": false,
+          "confidence": 0.98
+        }
+      }
+    }
+  ],
+  "expected_actions": [
+    "WAIT_STOP",
+    "WAIT_STOP"
+  ]
+}

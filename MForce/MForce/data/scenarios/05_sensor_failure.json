@@ -1,0 +1,63 @@
+{
+  "id": "05_sensor_failure",
+  "title": "Camera / sensor failure",
+  "description": "Unhealthy sensor triggers a latched fault-stop.",
+  "frames": [
+    {
+      "event_time_s": 1,
+      "sensor_time_s": 1.0,
+      "ego_speed_mps": 0.0,
+      "sensor_ok": false,
+      "emergency_stop": false,
+      "obstacle": {
+        "category": "six_wheeler",
+        "distance_m": 12,
+        "confidence": 0.98
+      },
+      "lanes": {
+        "left": {
+          "clear": true,
+          "approved": true,
+          "clearance_m": 34,
+          "oncoming": false,
+          "confidence": 0.98
+        },
+        "right": {
+          "clear": true,
+          "approved": true,
+          "clearance_m": 34,
+          "oncoming": false,
+          "confidence": 0.98
+        }
+      }
+    },
+    {
+      "event_time_s": 2,
+      "sensor_time_s": 2.0,
+      "ego_speed_mps": 0.0,
+      "sensor_ok": true,
+      "emergency_stop": false,
+      "obstacle": null,
+      "lanes": {
+        "left": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        },
+        "right": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        }
+      }
+    }
+  ],
+  "expected_actions": [
+    "FAULT_STOP",
+    "FAULT_STOP"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "01_clear_road",
+  "title": "Clear road",
+  "description": "No nearby obstacle; remain in the center lane.",
+  "frames": [
+    {
+      "event_time_s": 1,
+      "sensor_time_s": 1.0,
+      "ego_speed_mps": 1,
+      "sensor_ok": true,
+      "emergency_stop": false,
+      "obstacle": null,
+      "lanes": {
+        "left": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        },
+        "right": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        }
+      }
+    },
+    {
+      "event_time_s": 2,
+      "sensor_time_s": 2.0,
+      "ego_speed_mps": 2,
+      "sensor_ok": true,
+      "emergency_stop": false,
+      "obstacle": null,
+      "lanes": {
+        "left": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        },
+        "right": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        }
+      }
+    }
+  ],
+  "expected_actions": [
+    "CRUISE",
+    "CRUISE"
+  ]
+}

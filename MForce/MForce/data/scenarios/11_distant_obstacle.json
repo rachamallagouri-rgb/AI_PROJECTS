@@ -1,0 +1,67 @@
+{
+  "id": "11_distant_obstacle",
+  "title": "Distant truck",
+  "description": "An obstacle outside this toy detection threshold does not trigger a hazard.",
+  "frames": [
+    {
+      "event_time_s": 1,
+      "sensor_time_s": 1.0,
+      "ego_speed_mps": 1,
+      "sensor_ok": true,
+      "emergency_stop": false,
+      "obstacle": {
+        "category": "six_wheeler",
+        "distance_m": 70,
+        "confidence": 0.98
+      },
+      "lanes": {
+        "left": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        },
+        "right": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        }
+      }
+    },
+    {
+      "event_time_s": 2,
+      "sensor_time_s": 2.0,
+      "ego_speed_mps": 2,
+      "sensor_ok": true,
+      "emergency_stop": false,
+      "obstacle": {
+        "category": "six_wheeler",
+        "distance_m": 60,
+        "confidence": 0.98
+      },
+      "lanes": {
+        "left": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        },
+        "right": {
+          "clear": false,
+          "approved": false,
+          "clearance_m": 0,
+          "oncoming": false,
+          "confidence": 0.97
+        }
+      }
+    }
+  ],
+  "expected_actions": [
+    "CRUISE",
+    "CRUISE"
+  ]
+}
