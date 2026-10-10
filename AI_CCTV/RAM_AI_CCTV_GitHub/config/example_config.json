@@ -1,0 +1,16 @@
+{
+  "motion_threshold": 0.018,
+  "pre_event_seconds": 4.0,
+  "post_event_seconds": 5.0,
+  "blur_threshold": 65.0,
+  "dark_threshold": 35.0,
+  "disk_warn_gb": 2.0,
+  "watched_objects": [
+    "laptop",
+    "cell phone",
+    "backpack",
+    "handbag"
+  ],
+  "retention_days": 14,
+  "privacy_mask_unknown_faces": false
+}
