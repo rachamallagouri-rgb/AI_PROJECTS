@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ram_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RAM AI"
+            android:textColor="@color/ram_text"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="One intelligence layer for your projects"
+            android:textColor="@color/ram_muted" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mriButton"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="NeuroSpec\nMRI"
+                app:backgroundTint="@color/ram_surface_2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ctButton"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="NeuroSpec\nCT"
+                app:backgroundTint="@color/ram_surface_2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/audioButton"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="Audio AI"
+                app:backgroundTint="@color/ram_surface_2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cctvButton"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="CCTV AI"
+                app:backgroundTint="@color/ram_surface_2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cyberButton"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="Cyber Defense"
+                app:backgroundTint="@color/ram_surface_2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/glassesButton"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="Smart Glasses"
+                app:backgroundTint="@color/ram_surface_2" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Ask RAM AI"
+            android:textColor="@color/ram_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ram_secondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/chatInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ask about your models or features..."
+                android:minLines="2"
+                android:textColor="@color/ram_text"
+                android:textColorHint="@color/ram_muted" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/micButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="Voice"
+                app:backgroundTint="@color/ram_surface_2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sendButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Send"
+                app:backgroundTint="@color/ram_primary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chatResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:padding="14dp"
+            android:background="@color/ram_surface"
+            android:text="RAM AI is ready."
+            android:textColor="@color/ram_text"
+            android:textIsSelectable="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteAccountButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="Delete account"
+            android:textColor="@color/ram_error" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logoutButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="14dp"
+            android:text="Logout"
+            android:textColor="@color/ram_muted" />
+    </LinearLayout>
+</ScrollView>

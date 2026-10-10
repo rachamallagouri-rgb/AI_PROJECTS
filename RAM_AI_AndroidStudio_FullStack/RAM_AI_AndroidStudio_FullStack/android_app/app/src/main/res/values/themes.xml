@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RAMAI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ram_primary</item>
+        <item name="colorSecondary">@color/ram_secondary</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/ram_bg</item>
+        <item name="android:navigationBarColor">@color/ram_bg</item>
+        <item name="android:statusBarColor">@color/ram_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

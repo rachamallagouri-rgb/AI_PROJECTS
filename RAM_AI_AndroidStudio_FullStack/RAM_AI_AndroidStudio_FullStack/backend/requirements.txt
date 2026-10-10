@@ -1,0 +1,10 @@
+fastapi==0.118.0
+uvicorn[standard]==0.37.0
+pydantic[email]==2.11.9
+python-multipart==0.0.20
+httpx==0.28.1
+numpy>=2.0
+Pillow>=11.0
+pydicom>=3.0
+# Install the PyTorch build that matches your server/GPU separately when needed.
+# Example for CPU-only prototype: pip install torch

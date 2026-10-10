@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ram_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feature"
+            android:textColor="@color/ram_text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/helpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Select input and run your configured model."
+            android:textColor="@color/ram_muted" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ram_secondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="JSON / feature values"
+                android:minLines="5"
+                android:gravity="top"
+                android:textColor="@color/ram_text"
+                android:textColorHint="@color/ram_muted" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/selectFileButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="18dp"
+            android:text="Select file"
+            app:backgroundTint="@color/ram_surface_2" />
+
+        <TextView
+            android:id="@+id/selectedFileText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="No file selected"
+            android:textColor="@color/ram_muted" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/runButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Run AI"
+            android:textStyle="bold"
+            app:backgroundTint="@color/ram_primary" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@color/ram_surface"
+            android:minHeight="130dp"
+            android:padding="14dp"
+            android:text="Result will appear here."
+            android:textColor="@color/ram_text"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ram_bg">#0B0F14</color>
+    <color name="ram_surface">#151C24</color>
+    <color name="ram_surface_2">#1D2733</color>
+    <color name="ram_primary">#FF8A00</color>
+    <color name="ram_secondary">#00C8FF</color>
+    <color name="ram_text">#F4F7FA</color>
+    <color name="ram_muted">#9FB0C0</color>
+    <color name="ram_error">#FF5B6E</color>
+</resources>

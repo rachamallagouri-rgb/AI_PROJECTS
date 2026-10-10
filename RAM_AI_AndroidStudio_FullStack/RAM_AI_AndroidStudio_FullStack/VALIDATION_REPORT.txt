@@ -1,0 +1,20 @@
+RAM AI package validation
+=========================
+
+Completed checks in this environment:
+- Backend Python syntax compilation: PASS
+- FastAPI import and /health response: PASS
+- Account registration: PASS
+- Login: PASS
+- Authenticated chat routing: PASS
+- Model status endpoint: PASS
+- In-app account deletion backend endpoint: PASS
+- External account deletion web flow: PASS
+- Deleted token rejected after account deletion: PASS
+- Android XML parse validation: PASS
+
+Android Gradle build note:
+The execution environment used to generate this ZIP does not contain the Android SDK or Gradle distribution, so an APK/AAB build cannot be executed here. The Android project is version-aligned to AGP 9.2.0 + Gradle 9.4.1 + JDK 17 + compile/target SDK 36. Run android_app/bootstrap_gradle.ps1 on the Windows development machine to generate the standard Gradle wrapper, then android_app/build_debug.ps1.
+
+Model note:
+Actual trained model weights are not included in this package. The backend loads real TorchScript models from the documented model folders. Existing .pth state_dict files must be exported using the original model architecture; the package intentionally does not guess architecture definitions.
